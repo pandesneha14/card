@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS CARD HOVER</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: url(/Images/law.jpg);
+        
+        color: #fff;
+    }
+
+    .wrapper{
+        padding: 10px;
+    }
+
+    #card-area{
+        padding: 50px 0;
+    }
+
+    .box-area{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 10px;
+        margin-top: 50px;
+    }
+
+    .box{
+        border-radius: 10px;
+        width: 360px;
+        margin-left: 20px;
+        height: 750px;
+        position: relative;
+        overflow: hidden;
+        box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .box-img{
+       width: 100%;
+       border-radius: 10px; 
+       display: block;
+       transition: transform 0.5s;
+    }
+
+    .overlay{
+        /* height: 0; */
+        width: 100%;
+        background: linear-gradient(transparent, #1d1c1c 58%);
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 35px;
+        font-size: 14px;
+        transition: height 0.5s;
+    }
+
+    .overlay h3{
+        font-weight: 500;
+        margin-bottom: 20px;
+        /* margin-top: 80%; */
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 23px;
+        letter-spacing: 3px;
+    }
+
+    .overlay a{
+        margin-top: 10px;
+        color: skyblue;
+        text-decoration: none;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+    .boxLhover img{
+        transform: scale(1.2);
+    }
+
+    header{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+
+<body>
+    <div id="card-area">
+       <header>!! EXECUTIVES PREFACES !!</header>
+        <div class="wrapper">
+            <div class="box-area">
+                <div class="box">
+                    <img src="/Images/DeepakBhatt.webp" alt="" width="400px"  height="280px;">
+                      <div class="overlay">
+                          <h3>MR. DEEPAK BHATT</h3>
+                          <p style="line-height: 20px;">
+                            Meet Mr. Deepak Bhatt, a legal luminary with a kaleidoscope of qualifications & roles. Armed with a BA.LLB & an array of diplomas in Cyber Law, Media & Entertainment Law, Intellectual Property Rights, & Criminology, he's a legal virtuoso. Add to that his certification in Effective Speaking & Presentation Skills, & you have a powerhouse communicator. But his influence doesn't stop there; he's also an RTI Activist, Politician, Chairman of MadhuVihar ward NYP, Digital Marketing expert, Legal Advisor, & the Founder of Excellent Legal Helpers (ELH). A Motivational Speaker by trade, he's also a Financial & Insurance Advisor, shaping futures beyond the legal realm. With his diverse skill set & roles, Mr. Bhatt epitomizes versatility & influence in today's dynamic landscape.</p>
+
+                            <a href="https://www.linkedin.com/company/excellent-legal-helpers/" style="margin-top: 50px;">Deepak Bhat LinkedIn Profile</a>
+                           <a href="#">DEEPBHATT579@gmail.com </a>
+                           <a href="#">9821669624</a>
+                      </div>
+                </div>
+                
+                <div class="box">
+                  <img src="/Images/PriyaSharma.jpeg" alt="" width="400px"  height="280px;">
+                    <div class="overlay">
+                        <h3>MS. PRIYA SHARMA</h3>
+                        <p>Priya Sharma, a dynamic figure at Excellent Legal Helpers, serves as Partner, Additional Director, & Course & Internship Coordinator. Beyond her multifaceted roles, she's also the Secretary of the Free Legal Aid Service. Her accolades speak volumes about her prowess: crowned Best Speaker at the esteemed 2nd P.N. Mathur National Moot Court Competition 2023, & triumphing in various moot & trial Advocacy competitions. Priya's expertise traverses Constitutional Law, Competition Law, & Criminal Cases, with a keen focus on PMLA matters. Armed with diplomas in diverse fields including Computer Application, Media & Entertainment Law, & Corporate & Legal Communication, etc. She's a versatile legal professional. Her array of awards, from moot court victories to special mentions in Model United Nations & Youth Parliament, underscore her unwavering commitment to legal excellence and advocacy.</p>
+
+                        <a href="https://www.linkedin.com/in/priya-sharma-2a6266249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" style="margin-top: 40px;">Priya Sharma LinkedIn Profile</a>
+                        <a href="#">consultwithpriya@gmail.com</a>
+                        <a href="#">87001 06983</a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="/Images/Ritika.jpeg" alt="" width="400px"  height="280px;">
+                      <div class="overlay">
+                          <h3>MS. RIKTIKA </h3>
+                          <p style="margin-bottom: -10px;">Riktika is the embodiment of versatility at Excellent Legal Helpers, serving as Co-founder, Legal Associate, and Chairperson of the Legal Aid Centre. Armed with an LL.B. from Asian Law College, Noida, and a B.Com (H) from Delhi University, she's a legal maven with a holistic educational background. Her academic journey was marked by triumphs in moot court competitions, debates, Model United Nations (MUN), and Nukkad Natak, showcasing her prowess beyond the classroom. Her accolades include securing first place in a paper presentation competition and clinching the best memorial in moot and trial competitions. Riktika's expertise extends beyond traditional law studies; she holds diplomas in Media and Entertainment Law, Intellectual Property Rights (IPR), and Cyber Law, coupled with a certification in Corporate Legal Communication. Her areas of interest span a wide spectrum, from IPR and Constitutional Law to Hindu Law, Banking Law, Arbitration, and Compliance, making her a true connoisseur of legal intricacies.</p>
+                          <a href="https://www.linkedin.com/in/riktika-singh-082054240?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Ritika LinkedIn Profile</a>
+                          <a href="#">riktika.llb@alc.edu.in</a>
+                          <a href="#">9717085973</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
